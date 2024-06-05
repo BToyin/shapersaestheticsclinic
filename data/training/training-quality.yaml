@@ -1,0 +1,9 @@
+weight: 1
+name: "Training Quality"
+icon: "fa-solid fa-face-grin-stars"
+description: >
+  <ul class="list-style-none training-reason-list" >
+    <li><i class="fa-solid fa-face-grin-stars"></i>Learn from the best in the business!</li>
+    <li><i class="fa-solid fa-face-grin-stars"></i>Taught over 100+ students with High student success rate</li>
+    <li><i class="fa-solid fa-face-grin-stars"></i>1-2-1 Training or small intimate groups - max 4 students</li>
+  </ul>

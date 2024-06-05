@@ -1,0 +1,72 @@
+<section id="services" class="bar background-white no-mb">
+    <div class="container">
+        <div class="row">
+            <div class="heading text-center">
+                <h2>{{ .Site.Params.services.title }}</h2>
+            </div>
+            <div class="col-md-4" id="training">
+                <div class="bar background-tiger no-mb text-center">
+                    <div class="text-block">
+                        <h3 class="text-uppercase">{{ .Site.Params.training.title }}</h3>
+                        <p class="lead">{{ .Site.Params.training.subtitle | markdownify }}</p>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <a href="/contact" class="btn btn-lg btn-template-main text-uppercase">Book Now</a>
+                            </div>
+                            <div class="col-xs-6">
+                                <a href="{{ .Site.Params.training_info_pdf }}" class="btn btn-lg btn-template-main text-uppercase" target="_blank">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 beauty" id="treatments">
+                <div class="bar background-tiger no-mb text-center">
+                    <div class="text-block">
+                        <h3 class="text-uppercase">{{ .Site.Params.beauty.title }}</h3>
+                        <p class="lead no-mb">{{ .Site.Params.beauty.subtitle | markdownify }}</p>
+                        <ul class="lead">
+                            <li>Classic Eyelash Extensions</li>
+                            <li>Hybrid Eyelash Extensions</li>
+                            <li>Russian (Volume) Eyelash Extensions</li>
+                            <li>LVL Lash Lift</li>
+                            <li>Brow Wax and Tint</li>
+                            <li>Brow Lamination</li>
+                        </ul>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <a href="/contact" class="btn btn-lg btn-template-main text-uppercase">Book Now</a>
+                            </div>
+                            <div class="col-xs-6">
+                                <a href="{{ .Site.Params.treatments_info_pdf }}" class="btn btn-lg btn-template-main text-uppercase" target="_blank">See Prices</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 makeup">
+                <div class="bar background-tiger no-mb text-center">
+                    <div class="text-block">
+                        <h3 class="text-uppercase">{{ .Site.Params.makeup.title }}</h3>
+                        <p class="lead no-mb">{{ .Site.Params.makeup.subtitle | markdownify }}</p>
+                        <ul class="lead">
+                            <li>Microblading</li>
+                            <li>Combination Brows</li>
+                            <li>Ombre Brows</li>
+                            <li>LVL Lash Lift</li>
+                            <li>Lip Blush</li>
+                        </ul>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <a href="/contact" class="btn btn-lg btn-template-main text-uppercase">Book Now</a>
+                            </div>
+                            <div class="col-xs-6">
+                                <a href="{{ .Site.Params.treatments_info_pdf }}" class="btn btn-lg btn-template-main text-uppercase" target="_blank">See Prices</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

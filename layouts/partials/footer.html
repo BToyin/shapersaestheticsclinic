@@ -1,0 +1,78 @@
+<footer id="footer">
+    <div class="container">
+        {{ if isset .Site.Params "about_us" }}
+        <div class="col-md-3 col-sm-6">
+            <h4>{{ i18n "aboutUs" }}</h4>
+
+            {{ .Site.Params.about_us | safeHTML }}
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        <!-- /.col-md-4 -->
+        {{ end }}
+
+        <div class="col-md-3 col-sm-6">
+
+            <h4>Page Navigation</h4>
+
+            <div><a href="{{ .Permalink }}">Home</a></div>
+            <div><a href="/#about">Meet Trixie</a></div>
+            <div><a href="/#training">Training</a></div>
+            <div><a href="/#treatments">Treatments</a></div>
+            <div><a href="/#reviews">Reviews</a></div>
+            <div><a href="/#faq">FAQs</a></div>
+
+            <hr class="hidden-md hidden-lg">
+
+        </div>
+
+        {{ if isset .Site.Params "address" }}
+        <div class="col-md-3 col-sm-6">
+
+            <h4>{{ i18n "contactTitle" }}</h4>
+
+            {{ .Site.Params.address | safeHTML }}
+
+	        <a href="{{ default "/contact" .Site.Params.contact_url }}" class="btn btn-small btn-template-main">{{ i18n "contactGoTo" }}</a>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        {{ end }}
+
+        <div class="col-md-3 col-sm-6 text-center" id="review-us">
+            <a target="_blank" href="https://www.google.com/search?q=tiger+aesthetics+sutton+coldfield+reviews&client=ms-android-google&sca_esv=07222b98bcd66c82&sca_upv=1&sxsrf=ACQVn0_46uRRPRhkW8Am9U0j8bXmqjTnCw%3A1714597843789&ei=068yZprlL4CAhbIPpo-cqAI&oq=tiger+aesthetics+sutton+coldfield+rev&gs_lp=Egxnd3Mtd2l6LXNlcnAiJXRpZ2VyIGFlc3RoZXRpY3Mgc3V0dG9uIGNvbGRmaWVsZCByZXYqAggAMgQQIxgnMggQABiABBiiBDIIEAAYgAQYogRIth5QqwpY0Q1wAXgAkAEAmAFZoAHIAqoBATS4AQHIAQD4AQGYAgWgAtwCwgIOEAAYgAQYsAMYhgMYigXCAgsQABiABBiwAxiiBJgDAIgGAZAGA5IHATWgB84O&sclient=gws-wiz-serp#lrd=0x4870a5324ded1a95:0xd8ce644b8d31e50f,3,,,,">
+                <img src="/img/testimonials/review-us.png" alt="Review Tiger Aesthetics on Google">
+            </a>
+        </div>
+
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- /#footer -->
+
+<!-- *** FOOTER END *** -->
+
+<!-- *** COPYRIGHT ***
+_________________________________________________________ -->
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            {{ if isset .Site.Params "copyright" }}
+            <p class="pull-left">{{ .Site.Params.copyright | safeHTML }}</p>
+            {{ end }}
+            <p class="pull-right">
+                {{ i18n "websiteBy" | markdownify }} <a href="https://opulentsoftware.co.uk" target="_blank">Opulent Software</a>.
+                {{ i18n "templateBy" | markdownify }} <a href="https://bootstrapious.com/p/universal-business-e-commerce-template">Bootstrapious</a>.
+              <!-- Not removing this link is part of the licence conditions of the template. Thanks for understanding :) -->
+                {{ i18n "portedBy" | markdownify }} <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- /#copyright -->
+
+<!-- *** COPYRIGHT END *** -->

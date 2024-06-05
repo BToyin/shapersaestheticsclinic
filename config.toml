@@ -1,0 +1,268 @@
+baseurl = "https://tigeraesthetics.netlify.app/" # Configure URL. if using gh-pages https://github.com/<username>/hugo-universal-theme URL: https://<username>.github.io/hugo-universal-theme/
+title = "Tiger Aesthetics | Sutton Coldfield | Eyelash Extension Training | Microblading | Lash courses | Brow Training | Semi-permanent makeup"
+# theme = "hugo-universal-theme"
+languageCode = "en-us"
+# Site language. Available translations in the theme's `/i18n` directory.
+defaultContentLanguage = "en"
+# Enable comments by entering your Disqus shortname
+disqusShortname = "devcows"
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+
+# number of words of summarized post content (default 70)
+summaryLength = 70
+
+# Define the number of posts per page
+paginate = 10
+
+# not pluralize title pages by default
+pluralizelisttitles = false
+
+[menu]
+
+
+# Main menu
+[[menu.main]]
+    name       = "Home"
+    identifier = "menu.home"
+    url        = "/"
+    weight     = 1
+
+[[menu.main]]
+    name       = "About"
+    identifier = "menu.about"
+    url        = "/#about"
+    weight     = 2
+
+[[menu.main]]
+    name       = "Training"
+    identifier = "menu.training"
+    url        = "https://drive.google.com/file/d/1LXKwg5ufpH-osEsbcwhuuc2noSf9oRp7/view?usp=sharing"
+    weight     = 3
+
+[[menu.main]]
+    name       = "Treatments"
+    identifier = "menu.treatments"
+    url        = "https://drive.google.com/file/d/1KBrocneMiAA-6-DAEhO2eWqBgtKCV24f/view?usp=sharing"
+    weight     = 3
+
+[[menu.main]]
+    name       = "Reviews"
+    identifier = "menu.reviews"
+    url        = "/#reviews"
+    weight     = 4
+
+[[menu.main]]
+    name       = "FAQ"
+    identifier = "menu.faq"
+    url        = "/#faq"
+    weight     = 5
+
+[[menu.main]]
+    name       = "Contact Us"
+    identifier = "menu.contact"
+    url        = "/contact/"
+    weight     = 6
+
+
+# Top bar social links menu
+
+[[menu.topbar]]
+    weight = 3
+    name = "Whatsapp"
+    url = "https://wa.me/447425318121"
+    pre = "<i class='fab fa-brands fa-2x fa-whatsapp'></i>"
+
+[[menu.topbar]]
+    weight = 2
+    name = "Facebook"
+    url = "https://www.facebook.com/profile.php?id=61558132358957"
+    pre = "<i class='fab fa-2x fa-facebook'></i>"
+
+[[menu.topbar]]
+    weight = 1
+    name = "Instagram"
+    url = "https://www.instagram.com/tigeraestheticss/"
+    pre = "<i class='fab fa-2x fa-instagram'></i>"
+
+[[menu.topbar]]
+    weight = 4
+    name = "Email"
+    url = "mailto:tigeraesthetics@hotmail.com"
+    pre = "<i class='fas fa-2x fa-envelope'></i>"
+
+[params]
+    viewMorePostLink = "/blog/"
+    author = "Toyin"
+    defaultKeywords = ["Sutton Coldfield Eyelash Extensions", "Microblading Sutton Coldfield", "Lash courses Sutton Coldfield", "Brow training Sutton Coldfield"]
+    mainSections = ["blog"]
+    defaultDescription = "Site template made by Devcows using Hugo"
+
+    # Social media
+    facebook_site = "" # the Facebook handle of your site ('https://www.facebook.com/HANDLE')
+    twitter_site = "GoHugoIO" # the Twitter handle of your site (without the '@')
+    default_sharing_image = "img/sharing-default.png"
+
+    # Google Maps widget: If `googleMapsApiKey` is not set, no key will be passed to Google (which likely results in a broken map widget).
+    enableGoogleMaps = true
+    googleMapsApiKey = "AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY"
+
+    latitude = "-12.043333"
+    longitude = "-77.028333"
+
+    # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
+    style = "tigerAesthethics"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 50 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - register your account to https://formspree.io/register
+    # - login and create new form
+    # - set your form's endpoint url under 'formspree_action' below
+    # - upload the generated site to your server
+    # - test a dummy email yourself
+    # - you're done. Happy mailing!
+    #
+    # Enable the contact form by entering your Formspree.io endpoint url
+    formspree_action = "https://formspree.io/sample/of/endpoint"
+    contact_form_ajax = false
+
+    # Formspree form supports Google reCAPTCHA Key (type v2).
+    # If you use this feature, you should enable reCAPTCHA feature in the Formspree dashboard.
+    #
+    # By default, Formspree use a redirect page for recaptcha widget.
+    # If you use a recaptcha widget in your contact page, you should do next steps.
+    # (if you don't want, skip these steps)
+    #
+    #   1. register your site on Google recaptcha admin page: https://www.google.com/recaptcha/admin
+    #   2. select reCAPTCHA v2 and checkbox widget type.
+    #   3. remember site key and secret key.
+    #   4. enter secret key into "Custom reCAPTCHA Key" field in your Formspree form setting page.
+    #   5. change `enableRecaptchaInContactForm` is to true
+    #   6. enter site key into `googleRecaptchaKey` to enable a recaptcha widget in your page.
+    #
+    enableRecaptchaInContactForm = false
+    googleRecaptchaKey = "site_key_for_google_recaptcha"
+
+    about_us = "<p>Sutton Coldfield based Specialists in Eyelash Extension Training, Lash extensions, Semi Permanent Make up and Eyebrow Treatments</p>"
+    copyright = "Copyright &copy; 2024, Tiger Aesthetics; All Rights Reserved."
+
+    # Format dates with Go's time formatting
+    date_format = "January 2, 2006"
+
+    dropdown_mouse_over = false
+
+    disabled_logo = false
+    logo_text = "Tiger Aesthetics"
+
+    logo = "img/logo-1.png"
+    logo_small = "img/logo-1.png"
+    contact_url = "/contact"
+    address = """<p class="text-uppercase">
+        <a href="tel:+447 425 318 121" data-animate-hover="pulse">07425318121</a>
+        <br><strong>Tiger Aesthetics</strong>
+        <br>43 Avery Road
+        <br>Sutton Coldfield
+        <br>B73 6QB
+      </p>
+      """
+    training_info_pdf = "https://drive.google.com/file/d/1LXKwg5ufpH-osEsbcwhuuc2noSf9oRp7/view?usp=sharing"
+    treatments_info_pdf = "https://drive.google.com/file/d/1KBrocneMiAA-6-DAEhO2eWqBgtKCV24f/view?usp=sharing"
+
+[permalinks]
+    blog = "/blog/:year/:month/:day/:filename/"
+
+# Enable or disable top bar with social icons
+[params.topbar]
+    enable = true
+
+# Enable and disable widgets for the right sidebar
+[params.widgets]
+    categories = true
+    tags = true
+    search = true
+
+[params.carouselCustomers]
+    items = 6
+    auto_play = true
+    slide_speed = 2000
+    pagination_speed = 1000
+
+[params.carouselTestimonials]
+    items = 3
+    auto_play = true
+    slide_speed = 2000
+    pagination_speed = 1000
+
+[params.carouselHomepage]
+    # All carousel items are defined in their own files. You can find example items
+    # at 'exampleSite/data/carousel'.
+    # For more information take a look at the README.
+    enable = true
+    auto_play = true
+    slide_speed = 2000
+    pagination_speed = 1000
+
+[params.carouselTraining]
+    enable = true
+    items = 3
+    auto_play = false
+    slide_speed = 2000
+    pagination_speed = 1000
+
+[params.services]
+    title = "What we Offer"
+
+[params.training]
+    title = "Train With Us"
+    subtitle = "My academy can hold up to 4 students in our group classes, but I also offer 1-2-1 training. I offer expert training in Classic, Hybrid and Russian Eyelash extensions, as well as Lash lifts, Brow wax, tint, and lamination.  We offer a variety of courses fit for everyone so research well and take your pick! All my courses are suitable for complete beginners or technicians who are looking to expand their skills further."
+
+[params.beauty]
+    title = "Beauty Treatments"
+    subtitle = "Our wide range of treatments are perfect for anyone looking to add to their natural beauty. We provide all types of lash extensions from natural, classic individuals to full glam volume sets as well as all things brows. Choose from:"
+
+[params.makeup]
+    title = "Semi-permanent make up treatments"
+    subtitle = "Discover the allure of semi-permanent makeup treatments, offering long-lasting enhancements to your natural beauty. From defining brows to enhancing lips, our treatments provide a convenient and low-maintenance solution for a flawless look that lasts. Choose from:"
+
+
+[params.testimonials]
+    enable = true
+    # All testimonials are defined in their own files. You can find example items
+    # at 'exampleSite/data/testimonials'.
+    # For more information take a look at the README.
+    title = "Reviews"
+    subtitle = "I love hearing what clients have had to say about us, I hope you do too."
+
+[params.see_more]
+    enable = true
+    icon = "far fa-file-alt"
+    title = "Do you want to see more?"
+    subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
+    link_url = "#"
+    link_text = "Check other homepages"
+
+[params.newsletter]
+    enable = true
+
+[params.clients]
+    enable = true
+    # All clients are defined in their own files. You can find example items
+    # at 'exampleSite/data/clients'.
+    # For more information take a look at the README.
+    title = "Our Clients"
+    subtitle = ""
+
+[params.recent_posts]
+    enable = true
+    title = "From our blog"
+    subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
+    hide_summary = false
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  author = "authors"

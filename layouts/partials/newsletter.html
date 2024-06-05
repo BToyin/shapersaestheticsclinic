@@ -1,0 +1,25 @@
+{{ if .Site.Params.newsletter.enable }}
+<section id="newsletter" class="bar">
+    <div class="ch-newsletter text-center">
+        <div class="container">
+          <div class="col-md-9 text-center center-horizontal">
+            <div class="newsletter-headline">
+              Subscribe to our newsletter
+            </div>
+            <div class="newsletter-subtitle">
+                Receive Offers, Upcoming model days, new treatment alerts.
+            </div>
+            <form method="post" name="subscription_form" action="/thank-you" netlify-honeypot="bot-field" netlify>
+              <input class="newsletter-input newsletter-input-email" name="email" type="email" placeholder="Your email">
+              <p class="hidden">
+                <label>
+                  Not to be filled out by humans: <input name="bot-field" />
+                </label>
+              </p>
+              <button type="submit" class="btn btn-lg btn-template-main">Submit</button>
+            </form>
+          </div>
+        </div>
+    </div>
+</section>
+{{ end }}
