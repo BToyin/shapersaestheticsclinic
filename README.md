@@ -1,2 +1,1 @@
-# tiger-aesthethics
-# shapersaestheticsclinic
+# Shapers Aesthetics Clinic

@@ -1,8 +1,9 @@
 <header class="navbar-affixed-top">
+  <div class="grad-bar"></div>
     <div class="navbar navbar-default yamm {{ if .Site.Params.dropdown_mouse_over }}mouseover{{ end }}" role="navigation" id="navbar">
         <div class="">
-            <div class="navbar-header center-object">
-                <a class="navbar-brand home center-object" href="{{ "/" | relLangURL }}">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="{{ "/" | relLangURL }}">
                     <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Title }} logo"/>
                     <span class="sr-only">{{ .Title }} - {{ i18n "navHome" }}</span>
                 </a>

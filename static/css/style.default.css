@@ -1,7 +1,7 @@
 /* Themed colors */
 :root {
-  --primary-accent: #cfc19f;
-  --secondary-accent: #b4b2b3;
+  --primary-accent: #2596be;
+  --secondary-accent: #dbffff;
   --third-accent: #f2f2f2;
   --navbar-border-top: #a69a7f;
   --link-focus: #91876f;
@@ -463,7 +463,6 @@ ul.list-style-none {
 .navbar .navbar-buttons button,
 .navbar .navbar-buttons a.btn,
 .navbar .navbar-buttons .btn-default.navbar-toggle {
-  margin-top: 50px;
   margin-bottom: 11px;
   margin-left: 0;
   margin-right: 5px;
@@ -2555,18 +2554,6 @@ fieldset[disabled] .btn-template-primary.active {
     margin-left: 0;
   }
 }
-#navigation .navbar-nav {
-  @media (min-width: 768px) {
-    width: 100%;
-  }
-  /* background-color: var(--primary-accent); */
-}
-#navigation .navbar-nav > li {
-  @media (min-width: 992px) {
-    position: relative;
-    left: 24%;
-  }
-}
 .navbar-static-top {
   z-index: 1000;
   border-width: 0 0 1px;
@@ -3256,41 +3243,18 @@ header {
     height: 40vh;
   }
 }
-.wrapper{
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(-135deg, #f2f2f2, #cfc19f);
-  clip-path: circle(0.1px at calc(100% - 45px) 40px);
-  transition: all 0.3s ease-in-out;
-  z-index: 10;
-}
-.overlay-hidden-checkbox:checked ~ .wrapper{
-  clip-path: circle(75%);
-}
 .menu-btn{
   position: absolute;
   z-index: 20;
-  left: 10px;
-  top: 10px;
+  right: 10px;
   height: 50px;
   width: 50px;
   text-align: center;
-  border-radius: 50%;
   font-size: 25px;
   color: #fff;
   cursor: pointer;
-  background: linear-gradient(-135deg, #f2f2f2, #cfc19f);
+  background: linear-gradient(-135deg, #f2f2f2, #2596be);
   transition: all 0.3s ease-in-out;
-}
-.overlay-hidden-checkbox:checked ~ .menu-btn {
-  background: #fff;
-  color: #000;
-}
-.overlay-hidden-checkbox:checked ~ .menu-btn i:before {
-  content: "\f00d";
 }
 .nav-link {
   transition: all 0.3s ease-in-out;
