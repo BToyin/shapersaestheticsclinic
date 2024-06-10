@@ -29,37 +29,37 @@ pluralizelisttitles = false
     weight     = 1
 
 [[menu.main]]
-    name       = "About"
+    name       = "Meet the team"
     identifier = "menu.about"
     url        = "/#about"
     weight     = 2
 
 [[menu.main]]
-    name       = "Training"
+    name       = "Injectables"
     identifier = "menu.training"
     url        = "https://drive.google.com/file/d/1LXKwg5ufpH-osEsbcwhuuc2noSf9oRp7/view?usp=sharing"
     weight     = 3
 
 [[menu.main]]
-    name       = "Treatments"
+    name       = "Semi permanent make up"
     identifier = "menu.treatments"
     url        = "https://drive.google.com/file/d/1KBrocneMiAA-6-DAEhO2eWqBgtKCV24f/view?usp=sharing"
     weight     = 3
 
 [[menu.main]]
-    name       = "Reviews"
+    name       = "Skin Treatments"
     identifier = "menu.reviews"
     url        = "/#reviews"
     weight     = 4
 
 [[menu.main]]
-    name       = "FAQ"
+    name       = "Body"
     identifier = "menu.faq"
     url        = "/#faq"
     weight     = 5
 
 [[menu.main]]
-    name       = "Contact Us"
+    name       = "Hair"
     identifier = "menu.contact"
     url        = "/contact/"
     weight     = 6
@@ -70,7 +70,7 @@ pluralizelisttitles = false
 [[menu.topbar]]
     weight = 3
     name = "Whatsapp"
-    url = "https://wa.me/447425318121"
+    url = "https://wa.me/447749135670"
     pre = "<i class='fab fa-brands fa-2x fa-whatsapp'></i>"
 
 [[menu.topbar]]

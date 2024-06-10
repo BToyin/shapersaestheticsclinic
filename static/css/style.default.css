@@ -1,17 +1,17 @@
 /* Themed colors */
 :root {
-  --primary-accent: #2596be;
+  /* 37, 150, 190, 1 */
+  --primary-accent: #2596be;   
   --secondary-accent: #dbffff;
   --third-accent: #f2f2f2;
   --navbar-border-top: #a69a7f;
   --link-focus: #91876f;
-  --form-shadow: rgba(207, 193, 159, 0.5); 
+  --form-shadow: rgba(37, 150, 190, 0.5); 
   --link-hover-bg: #91876f;
   --navbar-focus: #e2dac5;
 }
 
 .clearfix:before,
-.clearfix:after,
 .navbar:before,
 .navbar:after,
 .navbar-header:before,
@@ -349,7 +349,6 @@ ul.list-style-none {
 .navbar ul.nav > li.active > a,
 .navbar ul.nav > li.open > a {
   text-decoration: none !important;
-  border-top: solid 5px var(--navbar-border-top);
 }
 @media (max-width: 768px) {
   .navbar ul.nav > li.active > a,
@@ -2494,7 +2493,6 @@ fieldset[disabled] .btn-template-primary.active {
   height: 90px;
   position: relative;
   z-index: 1;
-  width: 100%;
 }
 .navbar-collapse {
   overflow-x: visible;
@@ -2642,7 +2640,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 @media (min-width: 768px) {
   .navbar-nav {
-    float: left;
+    float: right;
     margin: 0;
   }
   .navbar-nav > li {
@@ -3306,12 +3304,12 @@ input[type="checkbox"]{
 .up-button a {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   color: #fff;
-  background: #cfc19f;
+  background: var(--primary-accent);
   padding: 13px 18px;;
   font-size: 18px;
-  border-radius: 6px;
+  border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.15);
   z-index: 5;
 }
