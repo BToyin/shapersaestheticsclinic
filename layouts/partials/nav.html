@@ -1,62 +1,63 @@
 <header class="navbar-affixed-top">
   <div class="navbar navbar-default yamm {{ if .Site.Params.dropdown_mouse_over }}mouseover{{ end }}" role="navigation" id="navbar">
-      <div>
-          <div class="navbar-header">
-              <a class="navbar-brand home center-horizontal" href="{{ "/" | relLangURL }}">
-                  <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Title }} logo"/>
-                  <span class="sr-only">{{ .Title }} - {{ i18n "navHome" }}</span>
-              </a>
-              <div id="main" class="navbar-buttons">
-                  <button onclick="openNav()" class="navbar-toggle btn-template-main menu-btn" data-toggle="collapse" data-target="#navigation">
-                    <span class="sr-only menu-btn">{{ i18n "navToggle" }}</span>
-                      <i class="fas fa-bars"></i>
-                  </button>
-              </div>
-          </div>
-          <!--/.navbar-header -->
+    <!--/.navbar-header -->
+    <div class="navbar-header">
+        <a class="navbar-brand home center-horizontal" href="{{ "/" | relLangURL }}">
+            <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Title }} logo"/>
+            <span class="sr-only">{{ .Title }} - {{ i18n "navHome" }}</span>
+        </a>
+        <div id="main" class="navbar-buttons">
+            <button onclick="openNav()" class="navbar-toggle btn-template-main menu-btn" data-toggle="collapse" data-target="#navigation">
+              <span class="sr-only menu-btn">{{ i18n "navToggle" }}</span>
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+    <!--/.nav-collapse -->
+    <div class="sidebar" id="mySidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <ul class="nav navbar-nav">
+          {{ $current := . }}
 
-          <div class="sidebar" id="mySidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-              <ul class="nav navbar-nav">
-                {{ $current := . }}
+          {{ range .Site.Menus.main.ByWeight }}
+          {{ $topLevel := replace .URL "/" "" }}
+          {{ $active := "" }}
 
-                {{ range .Site.Menus.main.ByWeight }}
-                {{ $topLevel := replace .URL "/" "" }}
-                {{ $active := "" }}
+          {{ if eq $current.RelPermalink .URL }}
+            {{ $active = "active" }}
+          {{ end }}
 
-                {{ if eq $current.RelPermalink .URL }}
-                  {{ $active = "active" }}
-                {{ end }}
-
-                <li class="dropdown {{ $active }}">
-                  {{ if hasPrefix .URL "https" }}
-                  <a href="{{ .URL }}" target="_blank">{{ .Name }}</a>
-                  {{ else }}
-                  <a href="{{ .URL }}">{{ .Name }}</a>
-                  {{ end }}
-                </li>
-                {{ end }}
-              </ul>
-          </div>
-          <!--/.nav-collapse -->
-      </div>
+          <li class="dropdown {{ $active }}">
+            {{ if hasPrefix .URL "https" }}
+            <a href="{{ .URL }}" target="_blank">{{ .Name }}</a>
+            {{ else }}
+            <a href="{{ .URL }}">{{ .Name }}</a>
+            {{ end }}
+          </li>
+          {{ end }}
+        </ul>
+        <div class="social" id="social">
+          {{ range .Site.Menus.topbar.ByWeight }}
+          <a href="{{ .URL | safeURL }}" target="_blank" style="opacity: 1;">{{ .Pre }}</a>
+          {{ end }}
+        </div>
+    </div>
   </div>  
   <script>
     function openNav() {
-      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("mySidebar").style.width = "100%";
       document.getElementById("main").style.marginRight = "250px";
+      document.getElementById("social").style.display="initial";
     }
   
     function closeNav() {
       document.getElementById("mySidebar").style.width = "0";
       document.getElementById("main").style.marginRight= "0";
+      document.getElementById("social").style.display="none";
     }
   </script>
 
   <div class="grad-bar"></div>
-  <div class="up-button">
-    <a href="#top"><i class="fas fa-arrow-up"></i></a>
-  </div>
 </header>
 
 <!-- *** NAVBAR END ***-->

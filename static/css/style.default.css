@@ -261,7 +261,7 @@ ul.list-style-none {
   }
 }
 #top {
-  background: var(--form-shadow);
+  background: var(--primary-accent);
   color: #eeeeee;
   padding: 10px 0;
   position: relative;
@@ -272,7 +272,7 @@ ul.list-style-none {
   font-size: 12px;
 }
 #top .social {
-  float: left;
+  float: right;
   text-align: right;
 }
 #top .social a {
@@ -337,7 +337,6 @@ ul.list-style-none {
 }
 .navbar ul.nav > li > a {
   text-transform: uppercase;
-  text-decoration: underline;
   font-weight: bold;
   letter-spacing: 0.08em;
   border-top: solid 5px transparent;
