@@ -385,4 +385,7 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("social").style.display = "none";
+  document.body.style.height = "";
+  document.body.style.overflow = "";
+  document.body.style.margin = "";
 }
