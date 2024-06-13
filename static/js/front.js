@@ -21,6 +21,8 @@ $(function () {
   counters()
   contactFormAjax()
   changeEnquiryPlaceholderText()
+  openNav()
+  closeNav()
 })
 
 // Ajax contact
@@ -370,3 +372,17 @@ $(document).ready(function() {
     $(`[unique-script-id="w-w-dm-id"] .overlay`).hide();
   });
 });
+
+/* opening nav sidebar */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("social").style.display = "initial";
+  document.body.style.height = "100%";
+  document.body.style.overflow = "hidden";
+  document.body.style.margin = "0";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("social").style.display = "none";
+}
