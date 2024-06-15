@@ -1,0 +1,40 @@
+{{ if isset .Site.Params "testimonials" }}
+{{ if gt (len .Site.Data.testimonials) 0 }}
+<section id="reviews" class="bar background-pentagon no-mb">
+    <div class="container">
+        <div class="row">
+            <div class="gtco-testimonials">
+                <div class="heading text-center">
+                    <h2 class="text-uppercase text-center no-mt">Testimonials</h2>
+                </div>
+                <div class="owl-carousel owl-theme testimonials"
+                data-items="{{ default 4 .Site.Params.CarouselTestimonials.items }}"
+                data-autoplay="{{ default false .Site.Params.CarouselTestimonials.auto_play }}"
+                data-slide-speed="{{ default 2000 .Site.Params.CarouselTestimonials.slide_speed }}"
+                data-pagination-speed="{{ default 1000 .Site.Params.CarouselTestimonials.pagination_speed }}">
+                {{ range .Site.Data.testimonials }}
+                <div class="card text-center">
+                    <img class="card-img-top" src="{{ .avatar | absURL }}" alt="testimonial avatar outline image">
+                    <div class="card-body">
+                        <h5>{{ .name }}</h5>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                        </ul>
+                        <p class="card-text">
+                            “ {{ .text | markdownify }} ”
+                        </p>
+                    </div>
+                </div>
+                {{ end }}
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
+<!-- /.bar -->
+{{ end }}
+{{ end }}

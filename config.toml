@@ -1,4 +1,4 @@
-baseurl = "https://tigeraesthetics.netlify.app/"
+baseurl = "https://shapersaesthetics.netlify.app/"
 title = "Shapers Aesthetics Clinic | Sutton Coldfield | Eyelash Extension Training | Microblading | Lash courses | Brow Training | Semi-permanent makeup"
 # theme = "hugo-universal-theme"
 languageCode = "en-us"
@@ -9,17 +9,10 @@ disqusShortname = "devcows"
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
 
-# number of words of summarized post content (default 70)
-summaryLength = 70
-
-# Define the number of posts per page
-paginate = 10
-
 # not pluralize title pages by default
 pluralizelisttitles = false
 
 [menu]
-
 
 # Main menu
 [[menu.main]]

@@ -1,12 +1,15 @@
 {{ if gt (len .Site.Data.team) 0 }}
 <section id="team" class="bar container">
     <div class="row">
+        <div class="heading text-center">
+            <h2 class="text-uppercase text-center no-mt">Meet the team</h2>
+        </div>
         {{ range sort .Site.Data.team "weight"}}
         <div class="col-md-4">
             <div class="flip-card center-horizontal">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img  src="{{ .image | relURL }}" alt="Avatar" style="width:300px;height:300px;">
+                        <img  src="{{ .image | relURL }}" alt="Avatar" style="width:350px;height:350px;">
                     </div>
                     <div class="flip-card-back">
                         <h1>{{ .name }}</h1>
