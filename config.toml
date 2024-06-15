@@ -30,8 +30,8 @@ pluralizelisttitles = false
 
 [[menu.main]]
     name       = "Meet the team"
-    identifier = "menu.about"
-    url        = "/#about"
+    identifier = "menu.team"
+    url        = "/#team"
     weight     = 2
 
 [[menu.main]]
