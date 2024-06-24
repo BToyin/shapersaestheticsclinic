@@ -2896,12 +2896,6 @@ a, a:hover, a:focus, a:active {
   text-decoration: none;
   outline: none;
 }
-.testimonial ul {
-  display: flex;
-  list-style: none;
-  font-size: 18px;
-  flex-direction: row-reverse;
-}
 .fa-star:before {
   color: var(--primary-accent);
 }
