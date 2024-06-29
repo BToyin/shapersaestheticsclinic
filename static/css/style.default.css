@@ -1359,7 +1359,7 @@ fieldset[disabled] .btn-template-primary.active {
   border: none;
 }
 #heading-breadcrumbs {
-  background: url('../img/texture-tiger.png') center center repeat;
+  background: url('../img/blue.jpg') center center repeat;
   padding: 20px 0;
   margin-bottom: 40px;
 }
@@ -1388,7 +1388,7 @@ fieldset[disabled] .btn-template-primary.active {
   padding: 60px 0;
 }
 .bar.background-pentagon {
-  background: url('../img/texture-tiger.png') center center repeat;
+  background: url('/img/blue.jpg') center center repeat;
   border-top: solid 1px #999999;
   border-bottom: solid 1px #999999;
 }
@@ -1419,17 +1419,6 @@ fieldset[disabled] .btn-template-primary.active {
   background: url('../img/fixed-background-2.jpg') center top no-repeat;
   /* background-attachment: fixed; */
   background-size: cover;
-}
-.bar.background-tiger {
-  background: url('../img/texture-tiger.png') center center repeat;
-  background-size: cover;
-}
-.background-tiger .text-block {
-  background-color: white;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  margin: 15px;
-  color: #999999;
 }
 .bar.color-white h1,
 .bar.color-white h2,

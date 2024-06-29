@@ -593,3 +593,38 @@ background: #ffffff none repeat scroll 0 0;
   background-color: #ffffff !important;
   color: var(--primary-accent) !important;
 }
+
+/* NAV SECTION STYLING */
+/* 
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: #333;
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+} 
+ ----   HTML ---
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+        background-color: #333;
+    }
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+*/
