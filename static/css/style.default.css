@@ -3,7 +3,7 @@
   /* 37, 150, 190, 1 */
   --primary-accent: #2596be;   
   --secondary-accent: #dbffff;
-  --third-accent: #f2f2f2;
+  --third-accent: #f8fbfd;
   --navbar-border-top: #a69a7f;
   --link-focus: #91876f;
   --form-shadow: rgba(37, 150, 190, 0.5); 
@@ -2947,8 +2947,7 @@ a, a:hover, a:focus, a:active {
 }
 #newsletter { 
   padding: 25px 0;
-  background-color: rgba(207, 193, 159, 0.65);
-  margin-top: -10px;
+  background-color: rgba(37, 150, 190, 0.4);
 }
 #services li {
   list-style: none;

@@ -29,26 +29,26 @@ pluralizelisttitles = false
 
 [[menu.main]]
     name       = "Injectables"
-    identifier = "menu.training"
-    url        = "https://drive.google.com/file/d/1LXKwg5ufpH-osEsbcwhuuc2noSf9oRp7/view?usp=sharing"
+    identifier = "menu.injectables"
+    url        = "https://drive.google.com/file/d/1K6CVV38w6-bTU-G7SJWQoFhzyDNxmyP9/view?usp=sharing"
     weight     = 3
 
 [[menu.main]]
     name       = "Semi permanent make up"
-    identifier = "menu.treatments"
-    url        = "https://drive.google.com/file/d/1KBrocneMiAA-6-DAEhO2eWqBgtKCV24f/view?usp=sharing"
+    identifier = "menu.makeup"
+    url        = "https://drive.google.com/file/d/1-o4Qhh84LZ7RUwzQqeYAQI54OQS5IdFX/view?usp=sharing"
     weight     = 3
 
 [[menu.main]]
     name       = "Skin Treatments"
-    identifier = "menu.reviews"
-    url        = "/#reviews"
+    identifier = "menu.skin"
+    url        = "https://drive.google.com/file/d/1twJod28wLDiOqAAv1dx2FXjUtISg2Ap-/view?usp=sharing"
     weight     = 4
 
 [[menu.main]]
     name       = "Body"
-    identifier = "menu.faq"
-    url        = "/#faq"
+    identifier = "menu.body"
+    url        = "https://drive.google.com/file/d/170bQViXvi7YUnDyKaJc3i_YRCYsxbGdJ/view?usp=sharing"
     weight     = 5
 
 [[menu.main]]
