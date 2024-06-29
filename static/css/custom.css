@@ -171,6 +171,8 @@
   transition: margin-right .5s;
 }
 
+/* OUR TEAM SECTION */
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
@@ -264,6 +266,8 @@
   }
 }
 
+/* GALLERY SECTION */
+
 .gallery .responsive-container-block {
   min-height: 75px;
   height: fit-content;
@@ -289,15 +293,6 @@
 }
 
 .gallery .responsive-container-block.Container {
-  max-width: 1320px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  margin-top: 50px;
-  margin-right: auto;
-  margin-bottom: 50px;
-  margin-left: auto;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -473,4 +468,128 @@
   .gallery .overlay-inner {
     max-width: 90%;
   }
+}
+
+/* SERVICES SECTION */
+
+.heading h2 span {
+  color: var(--primary-accent);
+}
+.carousel-shadow .owl-stage-outer {
+  margin: -15px -15px 0;
+  padding: 15px;
+}
+.we-offer-area .our-offer-carousel .owl-dots .owl-dot span {
+background: #ffffff none repeat scroll 0 0;
+  border: 2px solid;
+  height: 15px;
+  margin: 0 5px;
+  width: 15px;
+}
+.we-offer-area .our-offer-carousel .owl-dots .owl-dot.active span {
+  background: var(--primary-accent) none repeat scroll 0 0;
+  border-color: var(--primary-accent);
+}
+.we-offer-area .item {
+  background: #ffffff none repeat scroll 0 0;
+  border-left: 2px solid var(--primary-accent);
+  -moz-box-shadow: 0 0 10px #cccccc;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+  -o-box-shadow: 0 0 10px #cccccc;
+  box-shadow: 0 0 10px #cccccc;
+  overflow: hidden;
+  padding: 30px;
+  position: relative;
+  z-index: 1;
+}
+.we-offer-area.text-center .item {
+  background: #ffffff none repeat scroll 0 0;
+  border: medium none;
+  padding: 67px 40px 64px;
+}
+.we-offer-area.text-center .item img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  height: 80px;
+  position: relative;
+  text-align: center;
+  width: 80px;
+  z-index: 1;
+  transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  margin-bottom: 25px;
+}
+.we-offer-area.item-border-less .item {
+  border: medium none;
+}
+.we-offer-area .our-offer-items.less-carousel .equal-height {
+  margin-bottom: 30px;
+}
+.we-offer-area.item-border-less .item .number {
+  font-family: "Poppins",sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  opacity: 0.1;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.our-offer-carousel.center-active .owl-item:nth-child(2n) .item,
+.we-offer-area.center-active .single-item:nth-child(2n) .item {
+  background: var(--primary-accent) none repeat scroll 0 0;
+}
+.our-offer-carousel.center-active .owl-item:nth-child(2n) .item h4,
+.our-offer-carousel.center-active .owl-item:nth-child(2n) .item p,
+.we-offer-area.center-active .single-item:nth-child(2n) .item h4,
+.we-offer-area.center-active .single-item:nth-child(2n) .item p {
+  color: #ffffff;
+}
+.we-offer-area .item img {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.we-offer-area .item h4 {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.we-offer-area .item p {
+  margin: 0;
+}
+.we-offer-area .item h4,
+.we-offer-area .item p {
+  transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+.we-offer-area .item::after {
+  background: var(--primary-accent) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  width: 100%;
+  z-index: -1;
+}
+.we-offer-area .item:hover::after {
+  left: 0;
+}
+.we-offer-area .item:hover h4,
+.we-offer-area .item:hover p {
+  color: #ffffff !important;
+}
+.we-offer-area.text-center .item:hover img  {
+  background-color: #ffffff !important;
+  color: var(--primary-accent) !important;
 }
