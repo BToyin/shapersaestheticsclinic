@@ -634,3 +634,44 @@ background: #ffffff none repeat scroll 0 0;
     left: 0px;
   }
 }
+
+/* Bottom BAR styling */
+#bottom {
+  background: var(--third-accent);
+  color: #eeeeee;
+  padding: 10px 2px;
+}
+#bottom p {
+  margin: 5px 0 0 0;
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#bottom p a {
+  color: #ffffff;
+  background-color: var(--primary-accent);
+
+}
+#bottom p a i {
+  margin-left: 10px;
+  padding: 10px 50px;
+}
+
+/* TOP BAR styling */
+
+#top-1 {
+  background: var(--primary-accent);
+  color: #eeeeee;
+  padding: 5px 2px;
+}
+#top-1 p {
+  margin: 5px 0 0 0;
+  font-size: 15px;
+  text-align: center;
+}
+#top-1 p a {
+  color: #fff;
+}
+#top-1 p a i {
+  margin-left: 10px;
+}

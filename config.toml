@@ -52,7 +52,7 @@ pluralizelisttitles = false
     weight     = 5
 
 [[menu.main]]
-    name       = "Hair"
+    name       = "Contact"
     identifier = "menu.contact"
     url        = "/contact/"
     weight     = 6
@@ -172,6 +172,10 @@ pluralizelisttitles = false
 [params.topbar]
     enable = true
 
+[params.bottombar]
+    enable = true
+    text = "Get a Free Design & Quote Today"
+
 # Enable and disable widgets for the right sidebar
 [params.widgets]
     categories = true
@@ -207,7 +211,7 @@ pluralizelisttitles = false
     pagination_speed = 1000
 
 [params.services]
-    title = "Our Services"
+    title = "Our Treatments"
 
 [params.training]
     title = "Train With Us"
