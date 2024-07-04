@@ -213,6 +213,9 @@
   color: white;
   transform: rotateY(180deg);
 }
+#team > .row {
+  margin: 0;
+}
 #team-image {
   width: 93%;
   height: 400px;
