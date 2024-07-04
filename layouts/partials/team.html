@@ -8,11 +8,11 @@
         <div class="col-md-4">
             <div class="flip-card center-horizontal">
                 <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img  src="{{ .image | relURL }}" alt="Avatar" style="width:350px;height:350px;">
+                    <div class="flip-card-front center-horizontal">
+                        <img  src="{{ .image | relURL }}" alt="Avatar" id="team-image">
                     </div>
-                    <div class="flip-card-back">
-                        <h1>{{ .name }}</h1>
+                    <div class="flip-card-back center-horizontal">
+                        <h3>{{ .name }}</h3>
                         {{ .bio | markdownify }}
                     </div>
                 </div>
