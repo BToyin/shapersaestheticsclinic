@@ -642,7 +642,7 @@ background: #ffffff none repeat scroll 0 0;
 #bottom {
   background: var(--third-accent);
   color: #eeeeee;
-  padding: 10px 2px;
+  padding: 5px;
 }
 #bottom p {
   margin: 5px 0 0 0;
@@ -659,6 +659,10 @@ background: #ffffff none repeat scroll 0 0;
   margin-left: 10px;
   padding: 10px 50px;
 }
+#bottom .btn-lg {
+  font-size: 11px;
+}
+
 
 /* TOP BAR styling */
 

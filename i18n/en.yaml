@@ -32,7 +32,7 @@
   translation: "Your Number"
 
 - id: contactDropdown
-  translation: "Enquiring about..."
+  translation: "Select Treatment"
 
 - id: contactMessage
   translation: "Your Message"
