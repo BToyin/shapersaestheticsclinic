@@ -500,7 +500,7 @@ ul.list-style-none {
 }
 .navbar-affixed-top {
   top: 0;
-  z-index: 1000;
+  z-index: 2;
   width: 100%;
 }
 .navbar-affixed-top.affix {
@@ -2013,7 +2013,7 @@ fieldset[disabled] .btn-template-primary.active {
 /* navbar */
 .navbar {
   position: relative;
-  min-height: 62px;
+  min-height: 0;
   margin-bottom: 0;
   border-bottom: 1px solid transparent;
 }
