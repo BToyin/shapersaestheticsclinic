@@ -1,20 +1,13 @@
-{{ if .Site.Params.topbar.enable }}
-<header id="navbar-top" data-offset-top="62">
-  <div id="top">
+<div id="navbar-bottom" class="">
+  <div id="top-1">
     <div class="container">
       <div class="row">
-        <div class="col-xs-5">
-          {{ .Site.Params.topbar.text | safeHTML }}
-        </div>
-        <div class="col-xs-7">
-          <div class="social">
-            {{ range .Site.Menus.topbar.ByWeight }}
-            <a href="{{ .URL | safeURL }}" target="_blank" style="opacity: 1;">{{ .Pre }}</a>
-            {{ end }}
-          </div>
+        <div class="col-xs-12">
+          <p>
+            <a href="tel:0121 355 0353" data-animate-hover="pulse">Give us a Call: 0121 355 0353</a>
+          </p>
         </div>
       </div>
     </div>
   </div>
-</header>
-{{ end }}
+</div>

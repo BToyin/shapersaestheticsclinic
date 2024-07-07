@@ -69,7 +69,7 @@ pluralizelisttitles = false
 [[menu.topbar]]
     weight = 2
     name = "Facebook"
-    url = "https://www.facebook.com/profile.php?id=61558132358957"
+    url = "https://www.facebook.com/jotaronishapers"
     pre = "<i class='fab fa-2x fa-facebook'></i>"
 
 [[menu.topbar]]
@@ -140,7 +140,6 @@ pluralizelisttitles = false
     enableRecaptchaInContactForm = false
     googleRecaptchaKey = "site_key_for_google_recaptcha"
 
-    about_us = "<p>Revitalise your Radiance: Expert in Injectables, Skincare and Body Treatments</p>"
     copyright = "Copyright &copy; 2024, Shapers Aesthetics Clinic; All Rights Reserved."
 
     # Format dates with Go's time formatting
@@ -155,8 +154,7 @@ pluralizelisttitles = false
     logo_small = "img/logo.png"
     contact_url = "/contact"
     address = """<p class="text-uppercase">
-        <a href="tel:0121 355 0353" data-animate-hover="pulse">0121 355 0353</a>
-        <br><strong>Shapers Aesthetics Clinic</strong>
+        <strong>Shapers Aesthetics Clinic</strong>
         <br>43 Avery Road
         <br>Sutton Coldfield
         <br>B73 6QB
@@ -174,7 +172,6 @@ pluralizelisttitles = false
 
 [params.bottombar]
     enable = true
-    text = "Get a Free Design & Quote Today"
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]
@@ -213,19 +210,6 @@ pluralizelisttitles = false
 [params.services]
     title = "Our Treatments"
 
-[params.training]
-    title = "Train With Us"
-    subtitle = "My academy can hold up to 4 students in our group classes, but I also offer 1-2-1 training. I offer expert training in Classic, Hybrid and Russian Eyelash extensions, as well as Lash lifts, Brow wax, tint, and lamination.  We offer a variety of courses fit for everyone so research well and take your pick! All my courses are suitable for complete beginners or technicians who are looking to expand their skills further."
-
-[params.beauty]
-    title = "Beauty Treatments"
-    subtitle = "Our wide range of treatments are perfect for anyone looking to add to their natural beauty. We provide all types of lash extensions from natural, classic individuals to full glam volume sets as well as all things brows. Choose from:"
-
-[params.makeup]
-    title = "Semi-permanent make up treatments"
-    subtitle = "Discover the allure of semi-permanent makeup treatments, offering long-lasting enhancements to your natural beauty. From defining brows to enhancing lips, our treatments provide a convenient and low-maintenance solution for a flawless look that lasts. Choose from:"
-
-
 [params.testimonials]
     enable = true
     # All testimonials are defined in their own files. You can find example items
@@ -233,14 +217,6 @@ pluralizelisttitles = false
     # For more information take a look at the README.
     title = "Reviews"
     subtitle = "I love hearing what clients have had to say about us, I hope you do too."
-
-[params.see_more]
-    enable = true
-    icon = "far fa-file-alt"
-    title = "Do you want to see more?"
-    subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
-    link_url = "#"
-    link_text = "Check other homepages"
 
 [params.newsletter]
     enable = true
@@ -252,3 +228,6 @@ pluralizelisttitles = false
     # For more information take a look at the README.
     title = "Our Clients"
     subtitle = ""
+
+[params.team]
+    subtitle = 'Revitalise your Radiance! Shapers are an AWARD WINNING SALON with 33 𝗬𝗲𝗮𝗿𝘀 𝗘𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲. Experts in Injectables, Skincare and Body Treatments, our Expert Technicians will take amazing care of you 💉'

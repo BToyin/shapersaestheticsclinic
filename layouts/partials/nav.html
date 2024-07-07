@@ -24,36 +24,7 @@
         {{ end }}
       </div>
     </div>
-    <!--/.nav-collapse -->
-    <!-- <div class="sidebar" id="mySidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <ul class="nav navbar-nav">
-          {{ $current := . }}
-
-          {{ range .Site.Menus.main.ByWeight }}
-          {{ $topLevel := replace .URL "/" "" }}
-          {{ $active := "" }}
-
-          {{ if eq $current.RelPermalink .URL }}
-            {{ $active = "active" }}
-          {{ end }}
-
-          <li class="dropdown {{ $active }}">
-            {{ if hasPrefix .URL "https" }}
-            <a href="{{ .URL }}" target="_blank">{{ .Name }}</a>
-            {{ else }}
-            <a href="{{ .URL }}">{{ .Name }}</a>
-            {{ end }}
-          </li>
-          {{ end }}
-        </ul>
-        <div class="social" id="social">
-          {{ range .Site.Menus.topbar.ByWeight }}
-          <a href="{{ .URL | safeURL }}" target="_blank" style="opacity: 1;">{{ .Pre }}</a>
-          {{ end }}
-        </div>
-    </div> -->
-    {{ partial "top-1.html" . }}
+    {{ partial "top.html" . }}
   </div>  
   <div class="grad-bar"></div>
 </header>

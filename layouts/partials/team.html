@@ -4,6 +4,9 @@
         <div class="heading text-center">
             <h2 class="text-uppercase text-center no-mt">Meet<span> The</span> Team</h2>
         </div>
+        <p class="lead">
+            {{ .Site.Params.team.subtitle | markdownify }}
+        </p>
         {{ range sort .Site.Data.team "weight"}}
         <div class="col-md-4">
             <div class="flip-card center-horizontal">
