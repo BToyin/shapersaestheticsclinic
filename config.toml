@@ -22,7 +22,7 @@ pluralizelisttitles = false
     weight     = 1
 
 [[menu.main]]
-    name       = "Meet the team"
+    name       = "Meet The Team"
     identifier = "menu.team"
     url        = "/#team"
     weight     = 2
@@ -34,7 +34,7 @@ pluralizelisttitles = false
     weight     = 3
 
 [[menu.main]]
-    name       = "Semi permanent make up"
+    name       = "Semi Permanent Make Up"
     identifier = "menu.makeup"
     url        = "https://drive.google.com/file/d/1-o4Qhh84LZ7RUwzQqeYAQI54OQS5IdFX/view?usp=sharing"
     weight     = 3
