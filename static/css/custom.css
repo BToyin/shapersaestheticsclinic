@@ -686,66 +686,51 @@ background: #ffffff none repeat scroll 0 0;
 
 /* faq section */
 
-.faq-section .accordion {
-  width: 100%;
+details {
+  border: 1px solid rgba(112,112,112,0.1);
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+  margin-bottom:10px;
+  cursor:pointer;
 }
 
-.accordion-button:not(.collapsed) {
-  background-color: var(--third-accent);
+summary {
+  font-weight: 600;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+  list-style-type:"+";
+  list-style:none;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
-.accordion-button:not(.collapsed)::after {
-  background-image: none;
-  transform: none;
+details[open] {
+  padding: 0.5em; 
+  border:none;
+  background-color:	 rgba(173,216,230,0.5);
 }
 
-.accordion-button:focus {
-  box-shadow: none;
+summary::marker{
+  color: #0000ff;
+  font-size: 1.2em;
+  margin-right:20px;
 }
 
-.accordion-button:before {
-  content: "";
-  position: absolute;
-  /*   right: 0.75rem; */
-  right: 0.75rem;
-  top: 1.25rem;
-  height: 2px;
-  width: 1rem;
-  background-color: var(--primary-accent);
-}
-.accordion-button.collapsed:after {
-  content: "";
-  position: absolute;
-  /*   right: 1.1875rem; */
-  right: 1.1875rem;
-  top: 0.8125rem;
-  height: 1.0625rem;
-  width: 0.125rem;
-  border-style: none;
-  background-color: var(--primary-accent);
+details:hover{
+   background-color:rgba(173,216,230,0.5);
 }
 
-.faq-section .accordion-button h5 {
-  /*   color: #7dbc9e; */
-  color: var(--primary-accent);
-  margin-right: 13px;
+details summary::after{
+  content:"+";
+  float:right;
+  font-size:1.2em;
+  color:var(--primary-accent)
 }
 
-@media screen and (min-width: 768px) {
-  /*   .faq-section .accordion {
-    width: 50%;
-    margin: 0 auto;
-  } */
-
-  .accordion-button:before {
-    right: 0.75rem;
-  }
-
-  .accordion-button.collapsed:after {
-    right: 1.1875rem;
-  }
-
-  .faq-section .accordion-button h5 {
-    margin-right: 0px;
-  }
+details[open] summary::after{
+  content: "-";
+  float: right;
+  font-size: 1.5em;
+  color: var(--primary-accent)
 }
