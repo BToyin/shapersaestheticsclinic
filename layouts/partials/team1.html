@@ -8,7 +8,7 @@
             {{ .Site.Params.team.subtitle | markdownify }}
         </p>
         {{ range sort .Site.Data.team "weight"}}
-        <div class="col-md-4">
+        <div class="col-md-6">
             <div class="flip-card center-horizontal">
                 <div class="flip-card-inner">
                     <div class="flip-card-front center-horizontal">
@@ -17,7 +17,7 @@
                     <div class="flip-card-back center-horizontal">
                         <h3>{{ .name }}</h3>
                         <h4>{{ .title }}</h3>
-                        <p>{{ .summaryBio | markdownify }}</p>
+                        <p>{{ .bio | markdownify }}</p>
                     </div>
                 </div>
             </div>
