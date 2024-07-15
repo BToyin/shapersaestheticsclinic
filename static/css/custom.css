@@ -221,6 +221,7 @@
   height: 50vh;
 }
 #team p {
+  font-size: 13px;
   margin-left: 10px;
   margin-right: 10px;
 }
