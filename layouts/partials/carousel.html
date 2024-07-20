@@ -7,14 +7,14 @@
         data-slide-speed="{{ default 2000 .Site.Params.CarouselHomepage.slide_speed }}"
         data-pagination-speed="{{ default 1000 .Site.Params.CarouselHomepage.pagination_speed }}">
         {{ range sort .Site.Data.carousel "weight" }}
-        <div class="item">
-            {{ if .href }}
+        <div class="item welcome-section">
+            <!-- {{ if .href }}
             <a href="{{ .href }}" target="_blank" title="{{ .title | safeHTML }}">
             {{ end }}
                 <img class="img-responsive" src="{{ .image }}" alt="">
             {{ if .href }}
             </a>
-            {{ end }}
+            {{ end }} -->
         </div>
         {{ end }}
     </div>

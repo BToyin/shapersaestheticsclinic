@@ -741,3 +741,9 @@ details[open] summary::after{
   font-size: 1.5em;
   color: var(--primary-accent)
 }
+
+.welcome-section {
+  background: url('/img/carousel/2.webp') center top no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
