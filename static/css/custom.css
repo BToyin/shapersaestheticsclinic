@@ -225,6 +225,12 @@
   margin-left: 10px;
   margin-right: 10px;
 }
+#team h3 {
+  @media (max-width: 768px) {
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+}
 
 .gtco-testimonials {
   .card {
