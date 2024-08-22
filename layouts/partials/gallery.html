@@ -2,15 +2,16 @@
   <div class="gallery" unique-script-id="w-w-dm-id">
     <div class="responsive-container-block bigContainer">
       <div class="responsive-container-block Container">
+        {{ range sort .Site.Data.gallery "weight" }}
         <div class="project">
-          <img class="smallImage image-block" src="/img/gallery/1.png">
+          <img class="smallImage image-block" src="{{ .image }}">
           <div class="overlay">
             <div class="overlay-inner">
               <button class="close">
                 Close X
               </button>
               <div class="hdImgs">
-                <img class="squareImg" src="/img/gallery/1.png">
+                <img class="squareImg" src="{{ .image }}">
               </div>
             </div>
           </div>
@@ -20,150 +21,7 @@
             </button>
           </div>
         </div>
-        <div class="project">
-          <img class="smallImage" src="/img/gallery/2.png">
-          <div class="overlay">
-            <div class="overlay-inner">
-              <button class="close">
-                Close X
-              </button>
-              <div class="hdImgs">
-                <img class="squareImg" src="/img/gallery/2.png">
-              </div>
-            </div>
-          </div>
-          <div class="btn-box">
-            <button class="btn btn-template-main">
-              View
-            </button>
-          </div>
-        </div>
-        <div class="project">
-          <img class="smallImage" src="/img/gallery/3.png">
-          <div class="overlay">
-            <div class="overlay-inner">
-              <button class="close">
-                Close X
-              </button>
-              <div class="hdImgs">
-                <img class="squareImg" src="/img/gallery/3.png">
-              </div>
-            </div>
-          </div>
-          <div class="btn-box">
-            <button class="btn btn-template-main">
-              View
-            </button>
-          </div>
-        </div>
-        <div class="project">
-          <img class="smallImage" src="/img/gallery/4.jpg">
-          <div class="overlay">
-            <div class="overlay-inner">
-              <button class="close">
-                Close X
-              </button>
-              <div class="hdImgs">
-                <img class="squareImg" src="/img/gallery/4.jpg">
-              </div>
-            </div>
-          </div>
-          <div class="btn-box">
-            <button class="btn btn-template-main">
-              View
-            </button>
-          </div>
-        </div>
-        <div class="project">
-          <img class="smallImage" src="/img/gallery/5.jpg">
-          <div class="overlay">
-            <div class="overlay-inner">
-              <button class="close">
-                Close X
-              </button>
-              <div class="hdImgs">
-                <img class="squareImg" src="/img/gallery/5.jpg">
-              </div>
-            </div>
-          </div>
-          <div class="btn-box">
-            <button class="btn btn-template-main">
-              View
-            </button>
-          </div>
-        </div>
-        <div class="project">
-          <img class="smallImage" src="/img/gallery/6.jpg">
-          <div class="overlay">
-            <div class="overlay-inner">
-              <button class="close">
-                Close X
-              </button>
-              <div class="hdImgs">
-                <img class="squareImg" src="/img/gallery/6.jpg">
-              </div>
-            </div>
-          </div>
-          <div class="btn-box">
-            <button class="btn btn-template-main">
-              View
-            </button>
-          </div>
-        </div>
-        <div class="project">
-          <img class="smallImage" src="/img/gallery/7.jpg">
-          <div class="overlay">
-            <div class="overlay-inner">
-              <button class="close">
-                Close X
-              </button>
-              <div class="hdImgs">
-                <img class="squareImg" src="/img/gallery/7.jpg">
-              </div>
-            </div>
-          </div>
-          <div class="btn-box">
-            <button class="btn btn-template-main">
-              View
-            </button>
-          </div>
-        </div>
-        <div class="project">
-          <img class="smallImage" src="/img/gallery/8.jpg">
-          <div class="overlay">
-            <div class="overlay-inner">
-              <button class="close">
-                Close X
-              </button>
-              <div class="hdImgs">
-                <img class="squareImg" src="/img/gallery/8.jpg">
-              </div>
-            </div>
-          </div>
-          <div class="btn-box">
-            <button class="btn btn-template-main">
-              View
-            </button>
-          </div>
-        </div>
-        <div class="project">
-          <img class="smallImage" src="/img/gallery/9.jpg">
-          <div class="overlay">
-            <div class="overlay-inner">
-              <button class="close">
-                Close X
-              </button>
-              <div class="hdImgs">
-                <img class="squareImg" src="/img/gallery/9.jpg">
-              </div>
-            </div>
-          </div>
-          <div class="btn-box">
-            <button class="btn btn-template-main">
-              View
-            </button>
-          </div>
-        </div>
+        {{ end }}
       </div>
     </div>
   </div>
