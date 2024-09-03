@@ -8,8 +8,8 @@
         <div class="col-md-6">
             <div class="flip-card center-horizontal">
                 <div class="flip-card-inner">
-                    <div class="flip-card-front center-horizontal">
-                        <img  src="{{ .image | relURL }}" alt="Avatar" id="team-image">
+                    <div class="flip-card-front center-horizontal something"
+                    style="background: url('{{ .image | relURL }}') center top no-repeat; background-size: cover;">
                     </div>
                     <div class="flip-card-back center-horizontal">
                         <h3>{{ .name }}</h3>
