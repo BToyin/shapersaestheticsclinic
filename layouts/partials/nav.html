@@ -2,15 +2,20 @@
   <div class="navbar navbar-default yamm {{ if .Site.Params.dropdown_mouse_over }}mouseover{{ end }}" role="navigation" id="navbar">
     <!--/.navbar-header -->
     <div class="navbar-header">
-        <a class="navbar-brand home center-horizontal" href="{{ "/" | relLangURL }}">
+        <a class="navbar-brand home" href="{{ "/" | relLangURL }}">
             <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Title }} logo"/>
             <span class="sr-only">{{ .Title }} - {{ i18n "navHome" }}</span>
         </a>
-        <div id="main" class="navbar-buttons">
+        <div class="navbar-buttons">
             <button onclick="openNav()" class="navbar-toggle btn-template-main menu-btn" data-toggle="collapse" data-target="#navigation">
               <span class="sr-only menu-btn">{{ i18n "navToggle" }}</span>
                 <i class="fas fa-bars"></i>
             </button>
+        </div>
+        <div class="social">
+          {{ range .Site.Menus.topbar.ByWeight }}
+          <a href="{{ .URL | safeURL }}" target="_blank" style="opacity: 1;">{{ .Pre }}</a>
+          {{ end }}
         </div>
     </div>
     <div class="nav">

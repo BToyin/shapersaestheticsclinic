@@ -7,7 +7,9 @@
 	margin-top: 10px;
 	text-align: center;
 }
-
+#carousel .owl-theme .owl-controls{
+	margin-top: 0;
+}
 /* Styling Next and Prev buttons */
 
 .owl-theme .owl-controls .owl-buttons div{
