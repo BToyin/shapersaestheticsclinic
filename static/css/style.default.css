@@ -1628,94 +1628,6 @@ fieldset[disabled] .btn-template-primary.active {
   text-align: left;
   margin-bottom: 20px;
 }
-#checkout .nav {
-  margin-bottom: 20px;
-  border-bottom: solid 1px var(--primary-accent);
-}
-#checkout .nav li {
-  height: 100%;
-}
-#checkout .nav li a {
-  display: block;
-  height: 100%;
-}
-#order-summary table {
-  margin-top: 20px;
-}
-#order-summary table td {
-  color: #999999;
-}
-#order-summary table tr.total td,
-#order-summary table tr.total th {
-  font-size: 18px;
-  color: #555555;
-  font-weight: 700;
-}
-#checkout .table tbody tr td,
-#basket .table tbody tr td,
-#customer-order .table tbody tr td {
-  vertical-align: middle;
-}
-#checkout .table tbody tr td input,
-#basket .table tbody tr td input,
-#customer-order .table tbody tr td input {
-  width: 50px;
-  text-align: right;
-}
-#checkout .table tbody tr td img,
-#basket .table tbody tr td img,
-#customer-order .table tbody tr td img {
-  width: 50px;
-}
-#checkout .table tfoot,
-#basket .table tfoot,
-#customer-order .table tfoot {
-  font-size: 18px;
-}
-.shipping-method h4,
-.payment-method h4 {
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-#customer-orders table tr th,
-#customer-orders table tr td {
-  vertical-align: baseline;
-}
-#customer-order .table tfoot th {
-  font-size: 18px;
-  font-weight: 300;
-}
-#customer-order .addresses {
-  text-align: right;
-  margin-bottom: 30px;
-}
-#customer-order .addresses p {
-  font-size: 18px;
-  font-weight: 300;
-}
-#customer-account {
-  margin-bottom: 30px;
-}
-#get-it {
-  background: var(--primary-accent);
-  padding: 50px 0 30px;
-  color: #fff;
-  text-align: center;
-}
-#get-it h1,
-#get-it h2,
-#get-it h3,
-#get-it h4,
-#get-it h5,
-#get-it h6 {
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin: 0 0 20px;
-}
-#get-it p {
-  margin: 0 0 20px;
-}
 #footer {
   background: #555555;
   padding: 50px 0;
@@ -2130,7 +2042,7 @@ fieldset[disabled] .btn-template-primary.active {
   height: 0px;
   z-index: 12;
   position: relative;
-  left: 45%;
+  left: 50%;
   translate: -50% 0;
 }
 .navbar-brand:hover,
@@ -2745,10 +2657,10 @@ header {
 .navbar-header .social {
   position: absolute;
   z-index: 2;
-  right: 10px;
-  top: 20px;
+  right: 5px;
+  top: 25px;
   text-align: center;
-  font-size: 12px;
+  font-size: 11px;
   cursor: pointer;
 }
 .social a {
