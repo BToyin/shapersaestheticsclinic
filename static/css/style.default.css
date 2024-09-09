@@ -2654,17 +2654,40 @@ header {
   /* background: linear-gradient(-135deg, #f2f2f2, #2596be); */
   transition: all 0.3s ease-in-out;
 }
+@media (min-width: 768px) {
+  .navbar-header .social {
+    display: none;
+  }
+}
 .navbar-header .social {
   position: absolute;
   z-index: 2;
   right: 5px;
   top: 25px;
   text-align: center;
-  font-size: 11px;
+  font-size: 13px;
   cursor: pointer;
 }
-.social a {
+.navbar-header .social a {
   color: #555555;
+}
+@media (max-width: 767px) {
+  #top-1 .social {
+    display: none;
+  }
+}
+#top-1 .social {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 2px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+#top-1 .social a {
+  color: #fff;
+  margin: 0 3px 0 0
 }
 .nav-link {
   transition: all 0.3s ease-in-out;

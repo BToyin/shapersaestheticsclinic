@@ -632,7 +632,7 @@ background: #ffffff none repeat scroll 0 0;
   background-color: var(--primary-accent);
 }
 
-@media (max-width:600px) {
+@media (max-width:767px) {
   .nav > .nav-links {
     position: absolute;
     display: block;

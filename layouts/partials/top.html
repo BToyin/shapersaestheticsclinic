@@ -6,6 +6,11 @@
           <p>
             <a href="tel:0121 355 0353" data-animate-hover="pulse">Book your free consultation today on 0121 355 0353</a>
           </p>
+          <span class="social">
+            {{ range .Site.Menus.topbar.ByWeight }}
+            <a href="{{ .URL | safeURL }}" target="_blank" style="opacity: 1;">{{ .Pre }}</a>
+            {{ end }}
+          </span>
         </div>
       </div>
     </div>
