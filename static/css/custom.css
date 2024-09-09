@@ -411,7 +411,7 @@
 
 .gallery .overlay-inner img {
   max-height: 100%;
-  max-width: 95%;
+  max-width: 100%;
   transform: none;
 }
 
@@ -603,6 +603,9 @@ background: #ffffff none repeat scroll 0 0;
 .we-offer-area.text-center .item:hover img  {
   background-color: #ffffff !important;
   color: var(--primary-accent) !important;
+}
+.our-offer-items a {
+  color: #555555;
 }
 
 /* NAV SECTION STYLING */

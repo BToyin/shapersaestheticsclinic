@@ -12,9 +12,11 @@
             {{ range sort .Site.Data.services "weight" }}
             <div class="col-md-4 col-sm-6 equal-height">
                 <div class="item">
-                    <img class="img-responsive" src="{{ .image }}" alt="">
-                    <h4>{{ .service }}</h4>
-                    <p>{{ .description }}</p>
+                    <a href="{{ .brochure | safeURL }}" target="_blank" >
+                        <img class="img-responsive" src="{{ .image }}" alt="">
+                        <h4>{{ .service }}</h4>
+                        <p>{{ .description }}</p>
+                    </a>
                 </div>
             </div>
             {{ end }}
