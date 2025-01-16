@@ -3,11 +3,11 @@
 {{ if gt (len .Site.Data.carousel) 0 }}
 <section id="carousel">
     <div class="homepage owl-carousel"
-        data-autoplay="{{ default true .Site.Params.CarouselHomepage.auto_play }}"
+        data-autoplay="false"
         data-slide-speed="{{ default 2000 .Site.Params.CarouselHomepage.slide_speed }}"
         data-pagination-speed="{{ default 1000 .Site.Params.CarouselHomepage.pagination_speed }}">
         {{ range sort .Site.Data.carousel "weight" }}
-        <div class="item welcome-section" 
+        <div class="item welcome-section {{ if eq .image "img/carousel/brands.jpg" }}brands-image{{ end }}"
         style="background: url('{{ .image }}') center top no-repeat;background-size: cover;">
             <!-- {{ if .href }}
             <a href="{{ .href }}" target="_blank" title="{{ .title | safeHTML }}">
